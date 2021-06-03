@@ -1,0 +1,46 @@
+<div class="container">  
+    
+	<h1> 3s insurance </h1>  
+	  
+	<form [formGroup]="productForm" (ngSubmit)="onSubmit()">  
+		
+	  <!--<p>  
+		<label for="name" class="insurance">Insurance name:</label>  
+		<input type="text" id="name" name="name" formControlName="name" class="form-control">  
+	  </p>  -->
+	  
+	  <table class="table table-bordered" formArrayName="quantities">  
+		<tr>  
+		  <!--<th colspan="2">Add Multiple Quantity:</th> --> 
+		  <th width="150px"><button type="button" (click)="addQuantity()" class="btn-btn-primary">Add More</button></th>  
+		</tr>  
+		<tr class="tablestart" *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">  
+		  <th>  
+			  Name :  
+			  <input type="text" formControlName="qty" class="form-control">  
+		  </th>  
+		  <th>  
+			  Age:  
+			  <input type="text" formControlName="price" class="form-control">  
+		  </th>  
+		  <th>  
+			Insurance type :  
+			<input type="text" formControlName="qty" class="form-control">  
+		</th>  
+		  <td >  
+			  <button (click)="removeQuantity('are u sure')" class="btn btn-danger btn-lg">Remove</button>
+			</td>   
+			<td > 
+			  <button (click)="detailQuantity(i)" class="btn btn-danger btn-lg">Details</button>
+			 <!-- <button (click)="updateQuantity(i)" class="btn btn-danger">Update</button> -->
+		  </td>  
+		</tr>  
+	  </table>  
+	   
+	  <button type="submit" class="btn-btn-success">Submit</button>  
+		
+	</form>  
+		
+	<br/>  
+	<!--{{this.productForm.value | json}} -->
+  </div>

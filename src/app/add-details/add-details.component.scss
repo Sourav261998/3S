@@ -1,0 +1,66 @@
+.container{
+    width:100%;
+    overflow:hidden;
+   // margin:20px auto;
+   // padding:20px 0px;
+    background:aliceblue;
+    }
+
+    form .tablestart{
+        list-style:none;
+    float:left;
+    width: 75%;
+    height:100px;
+    margin:20px 0px 30px 55px;
+    margin-left: 150px;
+    }
+
+    h1{
+      text-align : center;
+        padding-top: 20px;
+        color: darkblue;
+        text-decoration-line: underline;
+        text-decoration-color: darkblue;
+    }
+
+    button:hover{
+      color:darkblue;
+      background-color:white;
+      padding-bottom: 5px;
+      margin-right: 10px;
+    }
+    button{
+      color:white;
+      background-color: darkblue;
+      margin-right: 10px;
+    }
+    tr{
+      border-right: 5px solid skyblue;
+      border-bottom: 5px solid skyblue;
+      border-top: 1px solid skyblue;
+      border-left: 1px solid skyblue;
+
+    }
+    th{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    th, td {
+    padding: 30px;
+    text-align: left;
+    
+    }
+
+    .insurance{
+      text-align: center;
+      margin-left: 450px;
+    }
+    .btn-btn-primary{
+      margin-left: 1000px;
+    }
+    .btn-btn-success{
+      margin-left: 500px;
+    }
+    
+      
+    
